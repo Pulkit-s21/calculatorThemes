@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body class="font-body">
+    
+    <div class="
+    main
+    bg-theme1-MainBg
+    flex
+    flex-col
+    container
+    mx-auto
+    p-6
+    py-8
+    rounded-md
+    max-w-lg
+    gap-6
+    shadow-xl
+    shadow-gray-700
+    ">
+
+    <!-- TODO: Make the 2 and 3 theme work -->
+      <!-- theme switcher div -->
+      <div class="
+      flex
+      items-center
+      justify-between
+      text-white
+      ">
+
+      <p class="text-2xl calc">calc</p>
+
+        <div class="theme text-2xl flex gap-4">
+
+        <p>Theme</p>
+
+          <div class="flex gap-4 [&>*]:cursor-pointer">
+            <p class="theme-1">1</p>
+            <p class="theme-2">2</p>
+            <p class="theme-3">3</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    <!-- TODO: Try to make the padding go away and only be there when text is in it -->
+      <!-- display div -->
+      <input class="
+      bg-theme1-InputBg
+      text-theme1-textClr
+      p-4
+      rounded-md
+      text-right
+      outline-none
+      text-4xl" id="display"></input>
+
+      <!-- buttons div -->
+      <div class="
+      buttons
+      flex 
+      flex-col 
+      gap-6
+      bg-theme1-KeyPad
+      p-6
+      rounded-md
+      ">
+
+        <div class="
+        top-row 
+        gap-4 
+        grid 
+        grid-flow-col-dense 
+        grid-cols-4
+        ">
+          <div class="btn theme1">7</div>
+          <div class="btn theme1">8</div>
+          <div class="btn theme1">9</div>
+          <div class="
+          delkey
+          btn 
+          theme1
+          bg-theme1-DelKey 
+          shadow-md 
+          shadow-theme1-DelKeyShadow 
+          text-white
+          ">&larr;</div>
+        </div>
+
+        <div class="
+        2nd-row 
+        gap-4 
+        grid 
+        grid-flow-col-dense 
+        grid-cols-4
+        ">
+          <div class="btn theme1">4</div>
+          <div class="btn theme1">5</div>
+          <div class="btn theme1">6</div>
+          <div class="btn theme1">+</div>
+        </div>
+
+        <div class="
+        3rd-row 
+        gap-4 
+        grid 
+        grid-flow-col-dense 
+        grid-cols-4
+        ">
+          <div class="btn theme1">1</div>
+          <div class="btn theme1">2</div>
+          <div class="btn theme1">3</div>
+          <div class="btn theme1"> - </div>
+        </div>
+
+        <div class="
+        4th-row 
+        gap-4 
+        grid 
+        grid-flow-col-dense 
+        grid-cols-4
+        ">
+          <div class="btn theme1">.</div>
+          <div class="btn theme1">0</div>
+          <div class="btn theme1">/</div>
+          <div class="btn theme1">*</div>
+        </div>
+
+        <div class="
+        last-row
+        grid
+        grid-flow-col-dense
+        grid-cols-2
+        gap-4
+        [&>*]:cursor-pointer
+        ">
+         <div class="
+         btn
+         text-lg 
+         bg-theme1-DelKey 
+         shadow-md 
+         shadow-theme1-DelKeyShadow
+         text-white
+         text-center
+         p-4
+         rounded-md
+         ">RESET</div>
+
+        <div class="
+        btn
+        flex
+        items-center
+        justify-center
+        bg-theme1-Calculate
+        shadow-md
+        shadow-theme1-CalculateShadow
+        text-white
+        text-3xl
+        text-center
+        rounded-md
+        p-0
+        "> = </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

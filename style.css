@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .btn{
+    @apply cursor-pointer text-center py-4 rounded-md text-4xl shadow-md;
+  }
+  .theme1{
+    @apply text-theme1-clr bg-theme1-Key shadow-theme1-KeyShadow;
+  }
+  .theme2{
+    @apply text-theme2-clr bg-theme2-Key shadow-theme2-KeyShadow;
+  }
+  .theme3{
+    @apply text-theme3-clr bg-theme3-Key shadow-theme3-KeyShadow;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
