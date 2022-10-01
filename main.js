@@ -13,6 +13,8 @@ const delKey = document.querySelector(".delkey");
 const calc = document.querySelector(".calc");
 const theme = document.querySelector(".theme");
 
+// TODO: Think of a way to make it much more neater and cleaner
+
 btn1.addEventListener("click",()=>{
     Theme1();
 });
