@@ -1,5 +1,6 @@
 import './style.css'
 import 'tw-elements';
+import anime from 'animejs/lib/anime.es.js';
 
 // * changing the themes
 const mainBg = document.querySelector(".main");
@@ -149,3 +150,16 @@ buttons.map(btn => {
         }
     });
 });
+
+// anime js 
+anime({
+    targets: '.btn',
+    keyframes: [
+        {translateY: -5},
+        {rotate: 180},
+        {translateY: 5},
+        {rotate: 0},
+        {translateY: 0}
+      ],
+    duration: 2500,
+  });
